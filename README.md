@@ -1,6 +1,6 @@
 # Formazione Sourcesence - DevOps Academy - Track Extra
 
-Questa repository contiene il materiale relativo agli esercizi svolti nella Track Extra dell'Academy. Gli esercizi proposti durante questa track hanno l'obiettivo di approfondire conoscenze e competenze in aree avanzate dell'amministrazione di sistemi, gestione di container, automazione tramite Ansible, e interazione con le API di Jenkins. Il materiale è destinato esclusivamente ai dipendenti aziendali e raccoglie le soluzioni agli esercizi assegnati.
+Questa repository contiene il materiale relativo agli esercizi svolti nella Track Extra dell'Academy. Gli esercizi proposti durante questa track hanno l'obiettivo di approfondire conoscenze e competenze in aree avanzate dell'amministrazione di sistemi, gestione di container, automazione tramite Ansible, e interazione con le API di Jenkins.
 
 ## Tecnologie e Metodologie Utilizzate
 
