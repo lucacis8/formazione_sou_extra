@@ -36,12 +36,9 @@ Per utilizzare il materiale di questa repository, segui questi passaggi:
    git clone https://github.com/lucacis8/formazione_sou_extra
    ```
 
-1. **Esecuzione degli Script**:
+2. **Esecuzione degli Script**:
    Ogni esercizio contiene script o playbook che possono essere eseguiti direttamente dal terminale. Assicurati di avere i permessi necessari per eseguire gli script (ad esempio, usa `chmod +x script.sh` per i file Bash).
-
-2. **Modifiche e Contributi**:
-   Se desideri aggiungere nuovi esercizi o apportare modifiche a quelli esistenti, puoi fare un fork della repository e inviare una pull request con le tue modifiche.
 
 ## Conclusione
 
-Questa repository è strettamente legata alla Track Extra dell'Academy, una parte fondamentale del percorso di formazione aziendale. Gli esercizi inclusi riflettono le competenze e le tecnologie avanzate che vengono approfondite durante il corso, con l'intento di migliorare l'automazione dei processi, l'amministrazione di sistemi e l'interazione con strumenti di gestione come Jenkins. Il materiale presente nella repository è destinato a essere utilizzato all'interno dell'azienda per applicazioni pratiche e per il continuo sviluppo delle competenze professionali nel campo dell'infrastruttura e della gestione dei sistemi.
+Questa repository è strettamente legata alla Track Extra dell'Academy, una parte fondamentale del percorso di formazione aziendale. Gli esercizi inclusi riflettono le competenze e le tecnologie avanzate che vengono approfondite durante il corso, con l'intento di migliorare l'automazione dei processi, l'amministrazione di sistemi e l'interazione con strumenti di gestione come Jenkins.
