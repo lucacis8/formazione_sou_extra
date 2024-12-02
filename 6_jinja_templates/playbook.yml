@@ -1,0 +1,38 @@
+---
+- name: Configurazione dei limiti e accessi
+  hosts: all
+  become: yes
+  vars:
+    environment: production  # Modificare in 'test' o 'development' se necessario
+    user: myuser
+    whitelist_users:
+      - alice
+      - bob
+      - charlie
+  tasks:
+
+    - name: Determinare il limite massimo di file aperti
+      set_fact:
+        max_open_files: "{{ 10000 if environment == 'production' else 1000 }}"
+
+    - name: Creare il file limits.conf da template
+      ansible.builtin.template:
+        src: templates/limits.conf.j2
+        dest: /tmp/limits.conf
+
+    - name: Aggiungere il contenuto a /etc/security/limits.conf
+      ansible.builtin.blockinfile:
+        path: /etc/security/limits.conf
+        block: "{{ lookup('ansible.builtin.file', '/tmp/limits.conf') }}"
+        insertafter: EOF
+        create: yes
+
+    - name: Aggiungere utenti alla whitelist in /etc/security/access.conf
+      ansible.builtin.blockinfile:
+        path: /etc/security/access.conf
+        block: |
+          {% for user in whitelist_users %}
+          + : {{ user }} : ALL
+          {% endfor %}
+        insertbefore: "- : ALL : ALL"
+        create: yes
