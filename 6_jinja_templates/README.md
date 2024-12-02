@@ -108,7 +108,7 @@ vars:
   default_command: /bin/bash
 ```
 
-###3. **Template Jinja: `deployment.yaml.j2`**
+### 3. **Template Jinja: `deployment.yaml.j2`**
 ```bash
 apiVersion: apps/v1
 kind: Deployment
