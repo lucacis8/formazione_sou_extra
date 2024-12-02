@@ -14,7 +14,7 @@ L’obiettivo dell’esercizio è imparare ad utilizzare i **template Jinja** al
 ## Struttura del progetto
 La directory del progetto è organizzata come segue:
 ```plaintext
-ansible_project/
+6_jinja_templates/
 ├── templates/
 │   ├── limits.conf.j2          # Template Jinja per /etc/security/limits.conf
 │   ├── Dockerfile.j2           # Template Jinja per il Dockerfile
