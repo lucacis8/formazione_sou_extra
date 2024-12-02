@@ -1,0 +1,6 @@
+# {{ ansible_managed }}
+FROM {{ base_image }}
+
+RUN apt-get update && apt-get install -y {{ ' '.join(packages) }}
+
+CMD ["{{ default_command }}"]
