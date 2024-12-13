@@ -26,6 +26,7 @@ L’obiettivo di questo esercizio è imparare a utilizzare le REST API di Jenkin
 ## Configurazione dell’Ambiente
 
 1. **Avviare la VM**:
+
    ```bash
    vagrant up
    ```
