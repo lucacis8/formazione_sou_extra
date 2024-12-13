@@ -35,7 +35,10 @@ Jenkins sarà disponibile all’indirizzo `http://localhost:8080`.
 2. **Recuperare la password iniziale di Jenkins**:
    ```bash
    vagrant ssh
-   sudo cat /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword
+   ```
+
+  ```bash
+   sudo docker exec jenkins_master cat /var/jenkins_home/secrets/initialAdminPassword
    ```
 
 Utilizza questa password per accedere all’interfaccia web con username `admin` e completare la configurazione iniziale.
