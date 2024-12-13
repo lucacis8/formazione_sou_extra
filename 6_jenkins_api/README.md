@@ -33,7 +33,11 @@ L’obiettivo di questo esercizio è imparare a utilizzare le REST API di Jenkin
 Jenkins sarà disponibile all’indirizzo `http://localhost:8080`.
 
 2. **Recuperare la password iniziale di Jenkins**:
-  ```bash
+   ```bash
+   vagrant ssh
+   ```
+
+   ```bash
    sudo docker exec jenkins_master cat /var/jenkins_home/secrets/initialAdminPassword
    ```
 
