@@ -155,7 +155,7 @@ Automatizza l’intero processo aggiungendo i seguenti task al file `provision.y
 ```
 
 ### Creare un Token API
-
+```bash
 - name: Creare un token API Jenkins
   uri:
     url: "http://192.168.56.10:8080/me/descriptorByName/jenkins.security.ApiTokenProperty/generateNewToken"
